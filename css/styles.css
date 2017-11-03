@@ -1,7 +1,30 @@
 body {
   text-align: center;
   font-family: courier;
-  background-image:url("../assets/image.jpeg");
+  background-image:url("../assets/image.gif");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 150%;
+}
+
+h1 {
+  color: #b5c008;
+  background-color: #015452;
+  font-weight: bold;
+}
+
+h2 {
+  color:red;
+  font-size: 300%;
+  font-weight: bold;
+}
+
+p {
+  color: #056260;
+  font-weight:bold;
+  font-size:200%;
+}
+
+.panel-footer {
+  color: #e7af03;
+  font-size: 100%;
 }
