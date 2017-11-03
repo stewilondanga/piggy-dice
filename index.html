@@ -4,10 +4,33 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <title> To do list</title>
+  <title> Piggy Dice</title>
 </head>
 
 <body>
+  <div class="start-menu container">
+    <div class="jumbotron">
+      <h1>Let's play Pig Dice!</h1>
+      <form id="player-1">
+        <div class="form-group">
+          <label for="player1Name">First Pig</label>
+          <input required class="player1Name form-control" type="text">
+        </div>
+      </form>
+      <form id="player-2">
+        <div class="form-group">
+          <label for="player2Name">Second pig</label>
+          <input required class="player2Name form-control" type="text">
+        </div>
+      </form>
+      <button id="start" class="btn-info btn">Start</button>
+    </div>
+  </div>
+  <div class="player-console container">
+    <button id="new-game" class="btn-success btn">NEW GAME</button>
+    <div class="row">
+      
+
 
   <div class="panel-footer">
     <p>Created by Stewart ilondanga <em>copyright 2017</em></p>
