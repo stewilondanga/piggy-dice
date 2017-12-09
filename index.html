@@ -8,46 +8,53 @@
 </head>
 
 <body>
-  <div class="start-menu container">
-    <div class="jumbotron">
-      <h1>Let's play Pig Dice!</h1>
-      <form id="player-1">
-        <div class="form-group">
-          <label for="player1Name">First Pig</label>
-          <input required class="player1Name form-control" type="text">
-        </div>
-      </form>
-      <form id="player-2">
-        <div class="form-group">
-          <label for="player2Name">Second pig</label>
-          <input required class="player2Name form-control" type="text">
-        </div>
-      </form>
-      <button id="start" class="btn-info btn">Start</button>
-    </div>
-  </div>
-  <div class="player-console container">
-    <button id="new-game" class="btn-success btn">NEW GAME</button>
-    <div class="row">
-      <div class="col-md-6">
-        <h2>First pig:<span id="player1Name"><span></h2>
-        <button id="player-1-roll" class="btn-success btn">Roll</button>
-        <button id="player1-hold" class="btn-success btn">Hold</button>
-        <h2>Dice Roll: <span id="die-roll-1"></span></h2>
-        <p>Round Total: <span id="round-total-1"></span></p>
-        <p>Total Score: <span id="total-score-1"></span></p>
-      </div>
-      <div class="col-md-6">
-        <h2>Second pig:<span id = "player2Name"><span></h2>
-        <button id="player2-roll" class="btn-success btn">Roll</button>
-        <button id="player2-hold" class="btn-success btn">Hold</button>
-        <h2>Dice Roll: <span id="die-roll-2"></span></h2>
-        <p>Round Total:<span id="round-total-2"></span></p>
-        <p>Total Score:<span id="total-score-2"></span></p>
-      </div>
-    </div>
-  </div>
+  <div class="wrapper clearfix" >
+           <div class="player-0-panel active-0">
+       <div class="game-panel">
+         <div class="player-name" id="name-0">First pig</div>
+         <div class="player-score-0" id="score-0">43</div>
+         <div class="player-0-rolled-1"><h3>Sorry! You rolled 1.</h3></div>
+         <div class="player-current-box-0">
+           <div class="player-current-label">Current</div>
+           <div class="player-current-score" id="current-0">11</div>
+         </div>
+       </div>
+       <div class="rules-panel" style="display:none">
+         <h3>Goal</h3>
+         <p>Be the first player to reach 50 points.</p>
+       </div>
+           </div>
 
+           <div class="player-1-panel">
+       <div class="game-panel">
+         <div class="player-name" id="name-1">Second pig</div>
+         <div class="player-score-1" id="score-1">72</div>
+         <div class="player-1-rolled-1"><h3>Oops! You rolled 1.</h3></div>
+         <div class="player-current-box-1">
+           <div class="player-current-label">Current</div>
+           <div class="player-current-score" id="current-1">0</div>
+         </div>
+       </div>
+       <div class="rules-panel" style="display:none">
+         <h3>Gameplay</h3>
+         <p>On a turn, a player rolls the die repeatedly until either:</p>
+         <li>1 is rolled</li>
+         <li>The player chooses to hold (stop rolling)</li>
+         <br>
+         <p>If the player chooses to hold, all of the points rolled during that turn are added to his or her score.</p>
+       <button class="btn-back"><i class="ion-ios-arrow-left color-0"></i>Back to game</button>
+       </div>
+           </div>
+           <div class="game-panel">
+
+           <button class="btn-new"><i class="ion-ios-plus-outline icon color-0"></i>New game</button>
+     <button class="btn-rules"><i class="ion-ios-compose-outline icon color-0"></i>Rules</button>
+           <button class="btn-roll"><i class="ion-ios-loop icon color-0"></i>Roll dice</button>
+           <button class="btn-hold"><i class="ion-ios-download-outline icon color-0"></i>Hold</button>
+     <img src="1-dice-5.png" alt="Dice" class="dice">
+           </div>
+
+       </div>
   <div class="panel-footer">
     <p>Created by Stewart ilondanga <em>copyright 2017</em></p>
 </body>
