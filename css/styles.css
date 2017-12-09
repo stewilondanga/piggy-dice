@@ -23,8 +23,6 @@ body {
     text-align: center;
     font-family: courier;
     background-image:url("../assets/image.gif");
-    background-repeat: no-repeat;
-    background-size: 100%;
     font-weight: 300;
     position: relative;
     height: 100vh;
